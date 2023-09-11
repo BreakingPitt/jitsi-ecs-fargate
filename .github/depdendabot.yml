@@ -1,9 +1,15 @@
 version: 2
 updates:
   - package-ecosystem: "github-actions"
-    directory: "/" # Location of package manifests
+    directory: "/"
     schedule:
       interval: "daily"
       time: "23:00"
       timezone: "Europe/Madrid"
-    open-pull-requests-limit: 3
+
+  - package-ecosystem: "terraform"
+    directory: "/"
+    schedule:
+      interval: "daily"
+      time: "23:00"
+      timezone: "Europe/Madrid"
